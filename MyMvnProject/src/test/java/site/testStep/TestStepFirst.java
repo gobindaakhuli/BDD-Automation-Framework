@@ -1,10 +1,8 @@
 package site.testStep;
 
+import java.io.IOException;
+
 import org.jbehave.core.annotations.*;
-import org.junit.Test;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 import test.page.FirstTest;
 
@@ -25,5 +23,32 @@ public class TestStepFirst {
 		System.out.println("Click on Login button on homepage");
 		ft.clickonLogin();
 	}
-
+	@Then("the user should be navigate to login page")
+	public void verifyLoginPage() {
+		ft.verifyLoginPage();
+	}
+	@When("the user enter subscribe $username and <'password'>")
+	public void enterSubscribeCredential(String username,String password) {
+		ft.enterCredential(username, password);
+	}
+	@When("click on submit button")
+	public void clickOnSubmit() {
+		ft.clickonSubmit();
+	}
+	@Then("the user navigate to billing page")
+	public void navigateToBillingPage() {
+		ft.navigateToBillingPage();
+	}
+	@When("the user enter user information")
+	public void enterUsrInfo() throws IOException {
+		ft.enterUsrInfo();
+	}
+	@When("the user click on cesurePurchase button")
+	public void clickOnPurchaseBtn() {
+		ft.clickOnPurchaseBtn();
+	}
+	@Then("the user should be on booking confirmation page")
+	public void verifyBookingConfPage() {
+		ft.verifyBookingConfPage();
+	}
 }
