@@ -1,4 +1,4 @@
-# BDD-Autamatiom-Framework
+# BDD-Automation-Framework
 
 ## ========== PRE-REQUISITE ==========
 	1. JDK should be installed
