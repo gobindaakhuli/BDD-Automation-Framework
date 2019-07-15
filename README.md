@@ -1,20 +1,27 @@
-# BDD-Automation-Framework
+# Automation Jbehave with serenity BDD Framework
 
-## ========== PRE-REQUISITE ==========
-	1. JDK should be installed
-	2. Apache-maven
-	3. Chromedriver
-	4. Eclipse(optional)
-Note: For more details how to configure you may gothrough on :
-	[a link](https://gobindaakhuli.wordpress.com/2018/09/14/configure-system-and-eclipse-for-bdd-autamatiom-framework-with-jbehave-and-serenity-with-maven/)
-	
-## 	========== How to start ==========
-	1. Open CMD
-	2. Go to the MyMvnProject directory
-	3. MyRun <Enter>
-	It will start executing.
-	
-## 	===== How to import this project on Eclipse =====
-	==> File => Import => Expand Maven and select "Existind Maven Project" =>
-		=> Browse cloned MyMvnProject directory => Finish
-	Note: You may have to wait 5-10 minutes to load full project
+STEP TO EXECUITE THIS SUITE ( FROM WINDOWS SYSTEM ):
+	1) NAVIGATE TO PROJECT DIRECTORY FROM CMD
+	2) WRITE Run and then Enter ( It will trigger Run.bat file )
+
+In this Jbehave framework I have use:
+Maven as a project management tool,
+Serenity for report generation,
+Java as a programming langueage.
+
+Here I have use THREE data source:
+	a) General Table
+	b) Property File
+	c) Excel file
+
+Execution REPORTS are store in: ~/AmazonTest/TestResults/<Folder>/index.html
+
+Story files are in : src/test/resources/stories
+Step files are in :  src/test/java
+All implementation files are in: src/main/java
+
+All properties files are in : src/main/resources (Use those file to keep all xpath)
+
+
+NB: To configuring environment I have follow my blog:
+https://gobindaakhuli.wordpress.com/2018/09/14/configure-system-and-eclipse-for-bdd-autamatiom-framework-with-jbehave-and-serenity-with-maven/ 

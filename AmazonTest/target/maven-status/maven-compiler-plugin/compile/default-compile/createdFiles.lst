@@ -1,0 +1,5 @@
+com\amazon\test\pages\ATPlpPdpPage.class
+com\amazon\test\pages\ATHomePage.class
+com\amazon\test\pages\ATLoginPage.class
+com\amazon\test\pages\ATFullCartPage.class
+com\amazon\test\reusable\Reusable.class

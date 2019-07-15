@@ -1,0 +1,6 @@
+#org.jbehave.core.embedder.StoryManager
+#Tue Jun 04 13:11:19 IST 2019
+Stories/verifyLogin.story=67000
+threads=1
+total=67000
+threadAverage=67000
