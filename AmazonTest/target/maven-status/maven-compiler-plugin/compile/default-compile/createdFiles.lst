@@ -3,3 +3,4 @@ com\amazon\test\pages\ATHomePage.class
 com\amazon\test\pages\ATLoginPage.class
 com\amazon\test\pages\ATFullCartPage.class
 com\amazon\test\reusable\Reusable.class
+com\amazon\test\pages\APITest.class

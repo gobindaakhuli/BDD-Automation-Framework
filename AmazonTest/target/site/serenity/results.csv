@@ -1,2 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Verify login","To validate Login logout process","ERROR","2019-06-04T13:10:12.113+05:30[Asia/Calcutta]","0.0","66.54"
+"Verify pdp plp with cart","To validate adding product to cart and update quantity on cart","FAILURE","2019-07-15T21:06:34.822+05:30[Asia/Calcutta]","0.0","165.54"

@@ -1,0 +1,69 @@
+<story path="Stories/verifyPdpPlpWithCart.story" title="">
+<meta>
+<property keyword="@" name="FullSuite" value=""/>
+<property keyword="@" name="PdpPlpWithCart" value=""/>
+</meta>
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">test the adding product to cart and update cart</inOrderTo>
+  <asA keyword="As a">tester</asA>
+  <iWantTo keyword="I want to">be able to verify PLP page PDP page and full cart page</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="To validate adding product to cart and update quantity on cart">
+<examples keyword="Examples:">
+<step>Given the user is on amazon home page</step>
+<step>When the user search for Electronics from departments</step>
+<step>Then the user click on HEADPHONES from the page</step>
+<step>When the user select first available product and click on add to cart</step>
+<step>Then the user verify product successfully added to cart</step>
+<step>When the user search for the product from search bar</step>
+<step>Then the user click on second product from the search list</step>
+<step>When the user select quantity two and click on add to cart</step>
+<step>Then the user verify product successfully added to cart</step>
+<step>When the user click on cart icon on top nav</step>
+<step>Then the user should navigate to full cart page</step>
+<step>And the user remove the first added product</step>
+<step>And reduce the quantity to one for the first product</step>
+<step>When the user click on proceed to checkout button on full cart page</step>
+<step>Then verify the user is on login page</step>
+<step>When the user enter &lt;SubscribedID&gt; and &lt;ValidPassword&gt;</step>
+<step>And click on sign in button</step>
+<step>When the user fill the billing address and click on continue</step>
+<step>Then the user navigate to shipping page</step>
+<parameters>
+<names><name>SubscribedID</name><name>ValidPassword</name></names>
+<values><value>gobinda.test@gmail.com</value><value>Welcome@123</value></values>
+</parameters>
+
+<example keyword="Example:">{SubscribedID=gobinda.test@gmail.com, ValidPassword=Welcome@123, FullSuite=, PdpPlpWithCart=}</example>
+<step outcome="successful">Given the user is on amazon home page</step>
+<step outcome="successful">When the user search for <parameter>Electronics</parameter> from departments</step>
+<step outcome="successful">Then the user click on <parameter>HEADPHONES</parameter> from the page</step>
+<step outcome="successful">When the user select first available product and click on add to cart</step>
+<step outcome="successful">Then the user verify product successfully added to cart</step>
+<step outcome="successful">When the user search for the product from search bar</step>
+<step outcome="successful">Then the user click on second product from the search list</step>
+<step outcome="failed" keyword="FAILED">When the user select quantity two and click on add to cart<failure>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then the user verify product successfully added to cart</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When the user click on cart icon on top nav</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then the user should navigate to full cart page</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And the user remove the first added product</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And reduce the quantity to one for the first product</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When the user click on proceed to checkout button on full cart page</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then verify the user is on login page</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When the user enter <parameter>gobinda.test@gmail.com</parameter> and <parameter>Welcome@123</parameter></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And click on sign in button</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When the user fill the billing address and click on continue</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then the user navigate to shipping page</step>
+</examples>
+<failure>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1005)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:837)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1081)
+	at com.amazon.test.pages.ATPlpPdpPage.clickOnQty2(ATPlpPdpPage.java:35)
+	at com.amazon.test.steps.ATPlpPdpPageStep.selectQty2AndClickOnAddToCart(ATPlpPdpPageStep.java:36)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:782)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:350)
+...</failure>
+</scenario>
+</story>

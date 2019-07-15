@@ -1,6 +1,6 @@
 #org.jbehave.core.embedder.StoryManager
-#Tue Jun 04 13:11:19 IST 2019
-Stories/verifyLogin.story=67000
+#Mon Jul 15 21:09:21 IST 2019
+Stories/verifyPdpPlpWithCart.story=166000
 threads=1
-total=67000
-threadAverage=67000
+total=166000
+threadAverage=166000

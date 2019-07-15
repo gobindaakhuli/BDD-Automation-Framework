@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Verify pdp plp with cart" skipped="0" tests="1" time="165.54" timestamp="2019-07-15 09:06:34"><testcase name="To validate adding product to cart and update quantity on cart"><failure message="Expected enabled element was not enabled&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'DESKTOP-PAURPOM', ip: '192.168.1.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-PAURPOM', ip: '192.168.1.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown</failure><system-err>Expected enabled element was not enabled
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-PAURPOM', ip: '192.168.1.26', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown&#13;
+com.amazon.test.pages.ATPlpPdpPage.clickOnQty2(ATPlpPdpPage.java:35)&#13;
+com.amazon.test.steps.ATPlpPdpPageStep.selectQty2AndClickOnAddToCart(ATPlpPdpPageStep.java:36)&#13;
+</system-err></testcase></testsuite>

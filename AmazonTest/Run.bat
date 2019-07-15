@@ -8,7 +8,7 @@
  echo Done
  echo.
  
-CALL mvn verify -P "singlethread" -Dmetafilter="+LoginLogout" -Dwebdriver.driver=chrome -Dwebdriver.base.url="https://amazon.com/"
+CALL mvn verify -P "singlethread" -Dmetafilter="+PdpPlpWithCart" -Dwebdriver.driver=chrome -Dwebdriver.base.url="https://amazon.com/"
 
 echo --- Copying test result to TestResults folder... 
  IF NOT EXIST %CD%\TestResults MD %CD%\TestResults

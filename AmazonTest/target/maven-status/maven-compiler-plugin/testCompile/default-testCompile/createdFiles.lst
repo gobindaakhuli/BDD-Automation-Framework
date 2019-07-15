@@ -1,4 +1,5 @@
 com\amazon\test\steps\ATLoginPageStep.class
+com\amazon\test\steps\TestAPIStep.class
 com\amazon\test\steps\AcceptanceTestSuite.class
 com\amazon\test\steps\ATPlpPdpPageStep.class
 com\amazon\test\steps\ATHomePageStep.class
